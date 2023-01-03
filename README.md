@@ -15,6 +15,10 @@ conda install -c conda-forge notebook nb_conda_kernels jupyterlab
 ```
 pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu114
 ```
+Check the cuda version of pytorch installation (or if the pytorch supports cuda):
+```
+python -c "import torch; print(torch.version.cuda)"
+```
 
 ### Other packages
 ```
