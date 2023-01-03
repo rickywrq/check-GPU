@@ -1,0 +1,18 @@
+
+
+alias  gpu="~/gpu_monitor.sh"
+alias adownload="aria2c -x 16 -s 16"
+alias vncc="vncserver -geometry 1920x1080 -localhost no -depth 16"
+alias piduser="ps -o user= -p"
+
+export CUDA_HOME=/usr/local/cuda
+export PATH=${CUDA_HOME}/bin:${PATH}
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
+
+
+export ZZROOT=$HOME/app
+export PATH=$ZZROOT/bin:$PATH
+export LD_LIBRARY_PATH=$ZZROOT/lib:$ZZROOT/lib64:$LD_LIBRARY_PATH
+export OpenCV_DIR=$ZZROOT
+export BOOST_ROOT=$ZZROOT
+
