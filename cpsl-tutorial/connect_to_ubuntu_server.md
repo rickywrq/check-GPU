@@ -50,8 +50,6 @@ User username
 2. You can access the notebook from your remote machine over SSH by setting up a SSH tunnel. Run the following command from your local machine:
     ```
     # Replace <PORT> with the port number you selected in the above step
-    # Replace <REMOTE_USER> with the remote server username
-    # Replace <REMOTE_HOST> with your remote server address
     ssh -L 7777:localhost:<PORT> username@xxx.dhcp.wustl.edu
     ```
     The above command opens up a new SSH session in the terminal.
