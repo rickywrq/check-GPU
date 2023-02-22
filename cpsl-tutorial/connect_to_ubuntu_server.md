@@ -54,7 +54,7 @@ User username
     ```
     The above command opens up a new SSH session in the terminal.
 
-3. Open a browser from your local machine and navigate to http://localhost:8080/, the Jupyter Notebook web interface. Replace 8080 with your port number used in step 1.
+3. Open a browser from your local machine and navigate to http://localhost:<PORT>/, the Jupyter Notebook web interface. Replace <PORT> with your port number used in step 1.
 
 4. **You can also use the link shown in the terminal:**
     ```
