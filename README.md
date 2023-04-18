@@ -12,6 +12,7 @@ conda install -c conda-forge notebook nb_conda_kernels jupyterlab
 
 ## PyTorch and CUDA related
 ### Install PyTorch for CUDA 11.7
+[PyTorch GET STARTED](https://pytorch.org/get-started/locally/)
 ```
 pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu114
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
