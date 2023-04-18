@@ -22,6 +22,8 @@ python -c "import torch; print(torch.version.cuda)"
 ```
 
 ### Problems with GCC for conda
+\>\> `GLIBCXX_3.4.30' not found
+\>\> [reference](https://stackoverflow.com/questions/73317676/importerror-usr-lib-aarch64-linux-gnu-libstdc-so-6-version-glibcxx-3-4-30)
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/xxx/lib
 ```
