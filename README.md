@@ -21,6 +21,11 @@ Check the cuda version of pytorch installation (or if the pytorch supports cuda)
 python -c "import torch; print(torch.version.cuda)"
 ```
 
+### Problems with GCC for conda
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/xxx/lib
+```
+
 ### Other packages
 ```
 pip install gdown
