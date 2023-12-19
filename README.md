@@ -8,6 +8,9 @@ conda install -c conda-forge opencv
 conda install -c conda-forge matplotlib
 
 conda install -c conda-forge notebook nb_conda_kernels jupyterlab
+
+conda install -c conda-forge ipywidgets
+
 ```
 
 ## PyTorch and CUDA related
