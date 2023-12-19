@@ -7,18 +7,20 @@ My codes to check if GPUs are available after system reinstallation and creating
 conda install -c conda-forge opencv
 conda install -c conda-forge matplotlib
 
-conda install -c conda-forge notebook nb_conda_kernels jupyterlab
-
+conda install -c conda-forge notebook nb_conda_kernels jupyterlab tqdm
 conda install -c conda-forge ipywidgets
 
 ```
 
 ## PyTorch and CUDA related
+```
+https://anaconda.org/nvidia/cuda-toolkit
+conda install -c nvidia cuda-toolkit
+```
 ### Install PyTorch for CUDA 11.7
 [PyTorch GET STARTED](https://pytorch.org/get-started/locally/)
 ```
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu114
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
 Check the cuda version of pytorch installation (or if the pytorch supports cuda):
 ```
