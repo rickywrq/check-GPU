@@ -36,6 +36,7 @@ For example,
 
 ### Configure the connection
 ![Alt text](figs/vnc_properties_demo.png?raw=true)
+
 If you are using RealVNC, you may Config the VNC as this.
 
 After config, you may connect to the desktop.
