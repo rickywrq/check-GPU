@@ -2,6 +2,12 @@
 ## About
 For security and VPN firewall reasons, we ask you to connect to the VNC via SSH tunneling.
 
+How this works: 
+* Usually, VNC listens to connections at port 590X, where X is a number for the VNC connection. However, such ports are blocked by the IT off campus for security reasons.
+* How to bypass this port? Use ssh. 
+* The ssh port 22 is open for all to use. Instead of connection to the vncserver via port 590X, we can re-direct or forward the port 590X and the network traffic in this port to your own computer via the ssh port 22.
+
+
 ## Preparation
 ***If you don't know any of the following, please talk with me.***
 
@@ -12,14 +18,21 @@ Have a port number you will use.
 
 Also have \<REMOTE_USER\> and \<REMOTE_HOST\> ready.
 
+\<REMOTE_USER\> is usually the server account for you.
+\<REMOTE_HOST\> is a ip address or a link ends with wustl.edu.
+
 ## Connection
 ### 1. Create a VNC session
 Log into the server via ssh. To create a VNC session, run the following in the terminal.
-* Create a 2K screen:
-`vncserver :{NUM} -geometry 2560x1440 -localhost no -depth 24`
 
-* Create a 1080p screen:
-`vncserver :{NUM} -geometry 1920x1080 -localhost no -depth 24`
+* Create a 1080p screen (Recommended, unless you need higher resolution.):
+`vncserver :{NUM} -geometry 1920x1080 -nolisten tcp -depth 24`
+
+* Create a 2K screen (Needs high bandwidth. Works OK on campus.):
+`vncserver :{NUM} -geometry 2560x1440 -nolisten tcp -depth 24`
+
+
+<font color="red"> !!! Note that there is a : before the number!!! </font>
 
 ### 2. Create ssh tunnel
 Documentation: https://www.ssh.com/academy/ssh/tunneling-example
