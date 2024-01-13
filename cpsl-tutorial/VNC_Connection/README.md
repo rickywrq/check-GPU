@@ -1,4 +1,4 @@
-# Connect to CPSL server via VNC + SSH
+# Connect to CPSL servers via VNC + SSH
 ## About
 For security and VPN firewall reasons, we ask you to connect to the VNC via SSH tunneling.
 
@@ -44,12 +44,23 @@ Here, XX = {NUM}.
 ## VNC Viewer
 ### Download the VNC viewer
 For example, 
-* realvnc: https://www.realvnc.com/en/connect/download/viewer/
+* RealVNC: https://www.realvnc.com/en/connect/download/viewer/
 * Tiger VNC: https://github.com/TigerVNC/tigervnc/releases
 
-### Configure the connection
+RealVNC can save the password for connection and multiple connection instances, but I find it has more lagging than the TigerVNC. TigerVNC in general has better smoothness if you are accessing the server from a far location. If you are on campus or at the same city, both should work well.
+
+### [RealVNC] Configure the connection
 ![Alt text](figs/vnc_properties_demo.png?raw=true)
 
 If you are using RealVNC, you may Config the VNC as this.
 
 After config, you may connect to the desktop.
+
+### [TigerVNC] Configure the connection
+If you are using RealVNC, you may Config the VNC as in the first line **"VNC server:"**.
+![Alt text](figs/tigervnc_main.png?raw=true)
+
+If you are accessing the server from remote or have limited network bandwidth, it is optional but recommended to configure the compression level from the option button pointed by the red arrow and configure as the following.
+* Recommended options: Tiger encoding, Full color level (it can be lower and the color may look different), ~9 level compression and ~6 JEPG quality.
+* The best option for you may need trying out different combinations.
+![Alt text](figs/tigervnc_options_compression.png?raw=true)
