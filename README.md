@@ -25,7 +25,8 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 Check the cuda version of pytorch installation (or if the pytorch supports cuda):
 ```
 python3 -c "import torch; print("CUDA:", torch.version.cuda)"
-
+```
+```
 python3 -c "import torch; print('Torch:', torch.__version__); print('CUDA:', torch.version.cuda); import torchvision; print('Torchvision:', torchvision.__version__)"
 ```
 
