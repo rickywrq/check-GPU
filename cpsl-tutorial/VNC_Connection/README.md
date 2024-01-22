@@ -64,3 +64,20 @@ If you are accessing the server from remote or have limited network bandwidth, i
 * Recommended options: Tiger encoding, Full color level (it can be lower and the color may look different), ~9 level compression and ~6 JEPG quality.
 * The best option for you may need trying out different combinations.
 ![Alt text](figs/tigervnc_options_compression.png?raw=true)
+
+
+## Manage the VNC sessions
+### Check the status of created VNCs or if a VNC is now running
+After creating the vnc sessions, you may check the status of created VNC sessions with
+
+```ps -ef | grep `whoami` | grep vnc```
+
+### Kill certain VNC sessions
+
+In order to kill vnc session for certain port, run
+
+```vncserver -kill :{NUM}```
+
+To terminate ***all*** vncs,
+
+```vncserver -kill :*```
