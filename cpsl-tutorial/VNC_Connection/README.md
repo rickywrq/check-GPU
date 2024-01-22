@@ -50,7 +50,9 @@ For example,
 RealVNC can save the password for connection and multiple connection instances, but I find it has more lagging than the TigerVNC. TigerVNC in general has better smoothness if you are accessing the server from a far location. If you are on campus or at the same city, both should work well.
 
 ### [RealVNC] Configure the connection
-![Alt text](figs/vnc_properties_demo.png?raw=true)
+<!-- ![Alt text](figs/vnc_properties_demo.png?raw=true) -->
+
+<img src="figs/vnc_properties_demo.png" width=60% height=60% >
 
 If you are using RealVNC, you may Config the VNC as this.
 
@@ -58,13 +60,14 @@ After config, you may connect to the desktop.
 
 ### [TigerVNC] Configure the connection
 If you are using RealVNC, you may Config the VNC as in the first line **"VNC server:"**.
-![Alt text](figs/tigervnc_main.png?raw=true)
+<!-- ![Alt text](figs/tigervnc_main.png?raw=true) -->
+<img src="figs/tigervnc_main.png" width=70% height=70% >
 
 If you are accessing the server from remote or have limited network bandwidth, it is optional but recommended to configure the compression level from the option button pointed by the red arrow and configure as the following.
 * Recommended options: Tiger encoding, Full color level (it can be lower and the color may look different), ~9 level compression and ~6 JEPG quality.
 * The best option for you may need trying out different combinations.
-![Alt text](figs/tigervnc_options_compression.png?raw=true)
-
+<!-- ![Alt text](figs/tigervnc_options_compression.png?raw=true) -->
+<img src="figs/tigervnc_options_compression.png" width=70% height=70% >
 
 ## Manage the VNC sessions
 ### Check the status of created VNCs or if a VNC is now running
