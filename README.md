@@ -5,12 +5,17 @@ My codes to check if GPUs are available after system reinstallation and creating
 ### Install Python Packages
 ```
 conda install -c conda-forge opencv
+```
+```
 conda install -c conda-forge matplotlib
 conda install -c conda-forge tqdm
 
 conda install -c conda-forge notebook nb_conda_kernels jupyterlab tqdm
 conda install -c conda-forge ipywidgets
-
+```
+One line:
+```
+conda install -c conda-forge matplotlib tqdm notebook nb_conda_kernels ipywidgets
 ```
 
 ## PyTorch and CUDA related
