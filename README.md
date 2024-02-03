@@ -15,7 +15,7 @@ conda install -c conda-forge ipywidgets
 ```
 One line:
 ```
-conda install -c conda-forge matplotlib tqdm notebook nb_conda_kernels ipywidgets
+conda install -c conda-forge matplotlib tqdm notebook nb_conda_kernels ipywidgets ipykernel
 ```
 
 ## PyTorch and CUDA related
