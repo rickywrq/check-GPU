@@ -35,7 +35,9 @@ python3 -c "import torch; print(\"CUDA:\", torch.version.cuda)"
 ```
 python3 -c "import torch; print('Torch:', torch.__version__); print('CUDA:', torch.version.cuda); import torchvision; print('Torchvision:', torchvision.__version__)"
 ```
-
+```
+python3 -c "import torch; print('Torch:', torch.__version__); print('CUDA:', torch.version.cuda); import torchvision; print('Torchvision:', torchvision.__version__); print([i/2**30 for i in torch.cuda.mem_get_info()])"
+```
 ### Exports for CUDA (needed for tensorflow)
 ```
 export CUDA_HOME=/usr/local/cuda
