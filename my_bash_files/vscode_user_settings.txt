@@ -1,0 +1,63 @@
+{
+    ////////////////////////////////////////////////////////////////////////////
+    /////////////////////// Server related configurations //////////////////////
+    ////////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////////////////////////
+    //////////////////// Non server related configurations /////////////////////
+    ////////////////////////////////////////////////////////////////////////////
+    "breadcrumbs.enabled": true,
+    "window.zoomLevel": -1,
+    
+    
+    "security.workspace.trust.untrustedFiles": "open",
+    
+    "jupyter.askForKernelRestart": false,
+    
+    
+    "workbench.colorTheme": "Default Dark+", //"Default Dark Modern",
+    
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook",
+      "*.j2k": "analyticsignal.preview-jp2"
+    },
+    
+    
+    "terminal.integrated.inheritEnv": false,
+    "explorer.confirmDragAndDrop": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    
+    
+    
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active",
+    "editor.rulers": [
+      80,
+      100
+    ],
+    "editor.scrollbar.verticalScrollbarSize": 20,
+    // "editor.smoothScrolling": true,
+    "editor.mouseWheelScrollSensitivity": 0.7,
+    "editor.fontSize": 14,
+    "[python]": {
+      "editor.formatOnType": true,
+      "editor.defaultFormatter": "ms-python.python"
+    },
+    
+    
+    "notebook.output.lineHeight": 1,
+    "notebook.markup.fontSize": 16,
+    "notebook.lineNumbers": "on",
+    // "editor.lineHeight": 17,
+    
+    "notebook.insertToolbarLocation": "notebookToolbar",
+    "notebook.showCellStatusBar": "visible",
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "hidden"
+    },
+    "notebook.globalToolbar": true,
+    "notebook.output.scrolling": true,
+    "notebook.consolidatedRunButton": true,
+}
