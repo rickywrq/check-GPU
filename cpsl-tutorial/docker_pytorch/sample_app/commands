@@ -1,0 +1,6 @@
+docker build -t sampleapp:v1 .
+docker run --rm -it sampleapp:v1 bash
+docker system prune
+
+docker run --gpus all -it --rm cpsl date
+
