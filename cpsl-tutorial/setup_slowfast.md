@@ -63,7 +63,13 @@ pip install numpy pandas scikit-learn simplejson psutil termcolor tensorboard op
 
 
 ```
+## TensorBoard
 
+```
+pip install tensorboard
+pip install protobuf==4.25.3
+
+```
 ---
 
 <details>
